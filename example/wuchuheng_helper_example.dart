@@ -1,7 +1,7 @@
-import 'package:wuchuheng_helper/src/helper.dart';
+import '../lib/wuchuheng_helper.dart';
 
 void main() {
-  final callback = Helper.debounce((int data) {
+  final callback = debounce((int data) {
     print(data); // 4
   }, 100);
   callback(1);

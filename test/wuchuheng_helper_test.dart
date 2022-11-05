@@ -7,7 +7,7 @@ void main() {
   group('A group of tests', () {
     test('Debounce Test', () async {
       Completer<int> result = Completer();
-      final callback = Helper.debounce((int data) {
+      final callback = debounce((int data) {
         result.complete(data);
       }, 100);
       callback(1);
